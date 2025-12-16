@@ -6,9 +6,8 @@ Este projeto tem como objetivo **extrair insights iniciais de negócio a partir 
 A análise das avaliações permite compreender melhor a percepção dos consumidores, identificar pontos fortes, detectar oportunidades de melhoria e apoiar decisões estratégicas.
 
 ### 🚀 Objetivos
-- Coletar e organizar reviews de clientes.  
-- Realizar análise exploratória dos textos.  
-- Identificar padrões de satisfação e insatisfação.  
+- Coletar e organizar reviews de clientes.
+- Identificar padrões com base nas avaliações (score de 1 a 5).  
 - Gerar métricas e visualizações que apoiem decisões de negócio.  
 
 ### 🛠️ Tecnologias/Conceitos Utilizados
