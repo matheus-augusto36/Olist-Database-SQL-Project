@@ -129,8 +129,47 @@ WHERE p.product_category_name IN ('alimentos_bebidas', 'artes', 'livros_tecnicos
 GROUP BY p.product_category_name
 order by avg_delivery_time ASC;
 
-
-
-
+-- Product categories ranked by late delivery percentage
+SELECT 
+    p.product_category_name AS categoria,
+    COUNT(*) AS total_atrasos,
+	round(
+		count(*) * 100.0 /
+		(SELECT COUNT(*)
+			FROM orders o2 
+			JOIN order_items oi2 ON o2.order_id = oi2.order_id
+			WHERE datediff(o2.order_delivered_customer_date, oi2.shipping_limit_date) > 0
+		)
+    , 2) as late_percentage
+    FROM orders o
+    JOIN order_items oi
+    ON o.order_id = oi.order_id
+	JOIN products p ON oi.product_id = p.product_id
+    GROUP BY p.product_category_name
+    ORDER BY total_atrasos DESC;
+    
+-- low score categories ranked by late delivery percentage
+WITH late_delivery_perc AS (
+	SELECT 
+	p.product_category_name AS categoria,
+	COUNT(*) AS total_atrasos,
+	round(
+		count(*) * 100.0 /
+		(SELECT COUNT(*)
+			FROM orders o2 
+			JOIN order_items oi2 ON o2.order_id = oi2.order_id
+			WHERE datediff(o2.order_delivered_customer_date, oi2.shipping_limit_date) > 0
+		)
+	, 2) as late_percentage
+	FROM orders o
+	JOIN order_items oi
+	ON o.order_id = oi.order_id
+	JOIN products p ON oi.product_id = p.product_id
+	GROUP BY p.product_category_name
+	ORDER BY total_atrasos DESC
+	)
+SELECT *
+FROM late_delivery_perc
+WHERE categoria IN ('alimentos_bebidas', 'artes', 'livros_tecnicos', 'malas_acessorios');
 
 
