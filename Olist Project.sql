@@ -10,6 +10,31 @@ SELECT order_status, COUNT(order_id) AS total_orders FROM orders GROUP BY order_
 -- Quantity of orders by score
 SELECT review_score, COUNT(DISTINCT order_id) AS total_orders FROM order_reviews group by review_score order by total_orders DESC;
 
+-- Percentage of orders by product score
+SELECT 
+	orw.review_score,
+    round(
+		COUNT(DISTINCT orw.order_id) * 100.0 /
+        (SELECT COUNT(DISTINCT orw.order_id) FROM order_reviews orw)
+    , 2) AS orders_percentage
+FROM order_reviews orw
+GROUP BY orw.review_score
+ORDER BY orders_percentage DESC;
+
+
+
+SELECT 
+    orw.review_score,
+    COUNT(DISTINCT orw.order_id) AS total_orders,
+    ROUND(
+        COUNT(DISTINCT orw.order_id) * 100.0 /
+        (SELECT COUNT(DISTINCT order_id) FROM order_reviews),
+        2
+    ) AS percentage_orders
+FROM order_reviews orw
+GROUP BY orw.review_score
+ORDER BY orw.review_score;
+
 -- Quantity of orders by product category
 SELECT 
 		p.product_category_name as category,
@@ -18,6 +43,7 @@ FROM order_items o
 JOIN products p ON o.product_id = p.product_id 
 group by p.product_category_name 
 order by total_orders DESC;
+
 
 -- Quantity of orders by product category (only low score)
 SELECT 
