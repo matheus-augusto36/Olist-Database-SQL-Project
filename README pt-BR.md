@@ -18,7 +18,10 @@ A análise das avaliações permite compreender melhor a percepção dos consumi
 - Cálculo de percentuais  
 
 ### 📈 Exemplos de Insights
-- 
+Obs: Utilização de amostra (tabela de avaliações) de 279 registros.
+- 71% dos pedidos avaliados receberam boa pontuação (4 e 5);
+- As categorias com mais de 20% de avaliações ruins representam, juntas, 65% de todos os pedidos com avaliações insatisfatórias.
+
 
 ### 📬 Contato
 Se quiser conversar sobre o projeto ou oportunidades:  
