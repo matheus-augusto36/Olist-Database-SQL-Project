@@ -18,23 +18,28 @@ A análise das avaliações permite compreender melhor a percepção dos consumi
 - Cálculo de percentuais  
 
 ### 📈 Análise
-Obs: Utilização de amostra (tabela de avaliações) de 279 registros, de uma base com total de 96461 pedidos registrados.
-- Cerca de 72% dos pedidos avaliados receberam boa pontuação (4 e 5);
+Obs: Utilização de amostra (tabela de avaliações) de 25305 registros, de uma base com total de 96461 pedidos registrados (cerca de 25%).
+- Cerca de 77% dos pedidos avaliados da amostra receberam boa pontuação (4 e 5);
   
-  <img width="247" height="87" alt="image" src="https://github.com/user-attachments/assets/a5438dd7-3dc3-4ffc-8fd2-95d0943775c3" />
-
-- As categorias com mais de 20% de avaliações ruins representam, juntas, 65% de todos os pedidos com avaliações insatisfatórias.
-
-  <img width="212" height="70" alt="image" src="https://github.com/user-attachments/assets/2a7d2288-d413-414d-8e23-f7fe194350c1" />
+  <img width="223" height="74" alt="image" src="https://github.com/user-attachments/assets/a040fe4f-5b9d-400c-b202-e5d9cdc73fbe" />
 
 
-- As categorias de produto com mais avaliações ruins são: alimentos_bebidas, artes, malas_acessorios, livros_tecnicos e livros_importados.
+- As categorias com mais de 20% de avaliações ruins representam, juntas, 80% de todos os pedidos com avaliações insatisfatórias da amostra.
 
-  <img width="267" height="161" alt="image" src="https://github.com/user-attachments/assets/d2d8425a-e91d-4bef-8e0e-ea5defff37c2" />
+  <img width="205" height="56" alt="image" src="https://github.com/user-attachments/assets/cfcb112e-4920-4356-a57d-bf58ea91095a" />
 
-- Para avaliar a representatividade dessas categorias em relação ao total da amostra, foi calculado o percentual de pedidos para cada uma delas e constatou-se que elas não tem impacto relevante no negócio (representam cerca de 1,8% do total de pedidos da amostra)
 
-  <img width="571" height="112" alt="image" src="https://github.com/user-attachments/assets/4445ede3-fd95-41b6-9dd2-bd282c50041c" />
+- As categorias de produto com mais avaliações ruins são: fraldas_higiene, fashion_roupa_masculina, telefonia_fixa, audio e moveis_escritorio.
+Para avaliar a representatividade dessas categorias em relação ao total da amostra, foi calculado o percentual de pedidos para cada uma delas e constatou-se que elas não tem impacto relevante no negócio (representam cerca de 2,2% do total de pedidos da amostra)
+
+  <img width="571" height="116" alt="image" src="https://github.com/user-attachments/assets/0ce74139-1398-4ee4-8011-686c0280e0f3" />
+
+- Em contrapartida, foram calculadas as categorias de produto mais representativas com base em número de pedidos, todas com mais de 20% de avaliações ruins.
+  
+  <img width="598" height="137" alt="image" src="https://github.com/user-attachments/assets/f5dfa890-a06a-44a2-8a7e-c8dd75edb62f" />
+
+
+
 
 
 
