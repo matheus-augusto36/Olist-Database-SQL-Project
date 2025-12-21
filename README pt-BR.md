@@ -34,9 +34,21 @@ Para avaliar a representatividade dessas categorias em relação ao total da amo
 
   <img width="571" height="116" alt="image" src="https://github.com/user-attachments/assets/0ce74139-1398-4ee4-8011-686c0280e0f3" />
 
-- Em contrapartida, foram calculadas as categorias de produto mais representativas com base em número de pedidos, todas com mais de 20% de avaliações ruins.
+- Em contrapartida, foram calculadas as categorias de produto mais representativas com base no percentual de número de pedidos, todas com mais de 20% de avaliações ruins.
   
   <img width="598" height="137" alt="image" src="https://github.com/user-attachments/assets/f5dfa890-a06a-44a2-8a7e-c8dd75edb62f" />
+
+- Após calcular o percentual de pedidos com atraso na entrega, constatou-se que em cada uma dessas categorias de produto há atraso na entrega em cerca de 67% a 76% dos pedidos na amostra. Isso mostra que problemas com delivery pode ser uma grande causa para as avaliações ruins no dataset.
+
+  <img width="467" height="135" alt="image" src="https://github.com/user-attachments/assets/8f67ed7a-fd9e-43f1-975d-24b2cdd8113a" />
+
+- Foi calculado o percentual de pedidos em atraso por UF de residência do cliente, e constatou-se que os estados das regiões sudeste e sul lideram em quantidade de pedidos, e também contém alto percentual de pedidos entregues em atraso.
+
+  <img width="375" height="134" alt="image" src="https://github.com/user-attachments/assets/c12bec2b-109f-4cea-9e72-7cd4a8e8a3b3" />
+
+- Já os estados das demais regiões do Brasil (Norte, Nordeste e Centro-Oeste) possuem o percentual de pedidos mais baixo, porém alto percentual de pedidos com entrega em atraso
+  
+  <img width="383" height="394" alt="image" src="https://github.com/user-attachments/assets/d58d3692-a269-45e8-9ae9-d863640b3ab8" />
 
 
 
