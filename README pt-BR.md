@@ -51,11 +51,9 @@ Para avaliar a representatividade dessas categorias em relação ao total da amo
   <img width="383" height="394" alt="image" src="https://github.com/user-attachments/assets/d58d3692-a269-45e8-9ae9-d863640b3ab8" />
 
 
-
-
-
-
-
+### 📌 Conclusão
+ - A satisfação geral é favorável com 77% de pedidos com boas avaliações, porém os atrasos na entrega podem ser considerados a maior causa das avaliações ruins.
+ - A análise de atrasos por UF mostra que o problema atinge todas as regiões do país, o que indica uma oportunidade de melhoria no setor logístico do negócio, principalmente nas regiões Sudeste e Sul onde há maior volume de pedidos.
 
 ### 📬 Contato
 Se quiser conversar sobre o projeto ou oportunidades:  
